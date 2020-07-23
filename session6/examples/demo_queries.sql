@@ -1,0 +1,10 @@
+INSERT INTO UBANK_ACCOUNTS (accountno, password, balance) VALUES (400001, 'ishwar123', 0);
+INSERT INTO UBANK_ACCOUNTS (accountno, password, balance) VALUES (400002, 'akash123', 0);
+
+SELECT * FROM UBANK_ACCOUNTS;
+SELECT accountNo, password FROM UBANK_ACCOUNTS;
+SELECT * FROM UBANK_ACCOUNTS WHERE accountNo = '400001';
+
+UPDATE UBANK_ACCOUNTS SET password = 'akashsinha123' WHERE accountno = 400002;
+
+DELETE FROM UBANK_ACCOUNTS WHERE accountno = 400002;
