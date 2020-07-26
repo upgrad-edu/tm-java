@@ -1,5 +1,3 @@
-package com.upgrad.ubank.utils;
-
 import java.util.*;
 
 public class NamesIterator {
