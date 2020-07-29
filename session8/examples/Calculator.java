@@ -12,18 +12,8 @@ public class Calculator {
 
     private void load () {
         supportedOperations = new LinkedHashMap<>();
-        Operation addition = new Operation() {
-            @Override
-            public int operate(int x, int y) {
-                return x + y;
-            }
-        };
-        Operation subtraction = new Operation() {
-            @Override
-            public int operate(int x, int y) {
-                return x - y;
-            }
-        };
+        Operation addition = (x, y) -> x + y;
+        Operation subtraction = (x, y) -> x - y;
         supportedOperations.put("add", addition);
         supportedOperations.put("sub", subtraction);
     }
