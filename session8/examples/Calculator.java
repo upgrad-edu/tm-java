@@ -12,10 +12,10 @@ public class Calculator {
 
     private void load () {
         supportedOperations = new LinkedHashMap<>();
-        Operation addition = Integer::sum;
-        Operation subtraction = (x, y) -> x - y;
-        supportedOperations.put("add", addition);
-        supportedOperations.put("sub", subtraction);
+        supportedOperations.put("add", Integer::sum);
+        supportedOperations.put("sub", (x, y) -> x - y);
+        supportedOperations.put("mul", (x, y) -> x * y);
+        supportedOperations.put("div", (x, y) -> x / y);
     }
 
     public void start () {
