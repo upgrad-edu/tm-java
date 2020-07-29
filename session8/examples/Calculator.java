@@ -6,28 +6,24 @@ interface Operation {
     int operate(int x, int y);
 }
 
-class Addition implements Operation {
-    @Override
-    public int operate(int x, int y) {
-        return x + y;
-    }
-}
-
-class Subtraction implements Operation {
-    @Override
-    public int operate(int x, int y) {
-        return x - y;
-    }
-}
-
 public class Calculator {
 
     private Map<String, Operation> supportedOperations;
 
     private void load () {
         supportedOperations = new LinkedHashMap<>();
-        Operation addition = new Addition();
-        Operation subtraction = new Subtraction();
+        Operation addition = new Operation() {
+            @Override
+            public int operate(int x, int y) {
+                return x + y;
+            }
+        };
+        Operation subtraction = new Operation() {
+            @Override
+            public int operate(int x, int y) {
+                return x - y;
+            }
+        };
         supportedOperations.put("add", addition);
         supportedOperations.put("sub", subtraction);
     }
