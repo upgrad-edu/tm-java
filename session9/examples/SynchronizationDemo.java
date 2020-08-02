@@ -5,7 +5,7 @@ class Counter {
         return count;
     }
 
-    public void incrementCount() {
+    public synchronized void incrementCount() {
         count++;
     }
 }
