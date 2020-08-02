@@ -1,12 +1,15 @@
 class Counter {
     private long count = 0;
+    private final Object lock = new Object();
 
     public long getCount() {
         return count;
     }
 
-    public synchronized void incrementCount() {
-        count++;
+    public void incrementCount() {
+        synchronized (lock) {
+            count++;
+        }
     }
 }
 
