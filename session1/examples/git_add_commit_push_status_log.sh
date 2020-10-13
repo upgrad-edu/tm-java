@@ -132,6 +132,9 @@ $ git log --oneline
 #79fdf38 added Accounts.txt file and Transactions.txt file
 
 #Ishwar.Soni@UE-B-LAP-0121 MINGW64 /d/U-Bank (master)
+$ git remote add origin https://github.com/ishwar-soni/U-Bank.git
+
+#Ishwar.Soni@UE-B-LAP-0121 MINGW64 /d/U-Bank (master)
 $ git push origin master
 #Enumerating objects: 8, done.
 #Counting objects: 100% (8/8), done.
