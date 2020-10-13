@@ -6,9 +6,6 @@ $ git init
 #Initialized empty Git repository in D:/U-Bank/.git/
 
 #Ishwar.Soni@UE-B-LAP-0121 MINGW64 /d/U-Bank (master)
-$ git remote add origin https://github.com/ishwar-soni/U-Bank.git
-
-#Ishwar.Soni@UE-B-LAP-0121 MINGW64 /d/U-Bank (master)
 $ git config --global user.name "Ishwar Soni"
 
 #Ishwar.Soni@UE-B-LAP-0121 MINGW64 /d/U-Bank (master)
